@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat'
+}
+
+
+
+.filterDiv {
+    color: #ffffff;
+    margin: 2px;
+    display: none;
+  }
+
+
+
+body{
+    background: #202020;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.content{
+    display: flex;
+    flex-direction: unset;
+    margin: 1%;
+    flex-wrap: wrap;
+}
+
+.create{
+    display: flex;
+    background: #8A2BE2;
+    border-radius: 100px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 50px;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 1% 1% 0;
+    border: none;
+    padding: 5%;
+    
+}
+
+#myBtnContainer{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+}
+
+.sorting {
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    width: 20%;
+    padding: 1%;
+    height: 50%;
+    flex-direction: column;
+}
+
+
+.sorting_list{
+    display: block;
+    width: 200px;
+    background: #C4C4C4;
+    padding: 3%;
+    border-radius: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+.execut{
+    width: 70%;
+    padding: 1%;
+    display: flex;
+}
+
+.con_list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.box1_content {
+    align-items: center;
+    gap: 3rem;
+    float: left;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box1_info_tip{
+    font-style: normal;
+    font-size: 24px;
+    color: #9c9c9c;
+    margin-top: 1%;
+}
+
+.box1_info_title{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fffdfd;
+    line-height: 50px;
+}
+
+.box1_info_description{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fffdfd;
+}
+
+
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+
+
+.btn:hover {
+  background-color: #ddd;
+  border-radius: 32px;
+}
+
+
+/*.btn.active {
+    background-color: #8A2BE2;
+    color: black;
+    border-radius: 32px;
+}*/
+
+button{
+    background: none; 
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#Button{
+    border-bottom: 4px solid #F7931E;
+    margin: 5% 0 10% 0;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.create{
+     display: none;
+}
+
+
+
+
+@media (max-width:867px){
+	.content{
+        display: block;
+    }
+
+    .execut{
+        width: 100%;
+    }
+    .sorting{
+        width: 35%;
+    }
+   
+    #myBtnContainer{
+        display: none;
+    }
+
+    .btn{
+        font-size: 12px;
+        margin: 0;
+    }
+    
+    .create{    
+    font-size: 16px;
+    margin: 1% 1% 1% 0;
+    }
+
+
+}
+
+@media (max-width:767px){
+	.content{
+        display: block;
+    }
+
+    .execut{
+        width: 100%;
+    }
+    
+    #myBtnContainer{
+        display: none;
+    }
+    
+    #Button{
+        margin: 5% 0 5% 0;
+    }
+
+
+    .create{    
+    font-size: 12px;
+    margin: 1% 1% 1% 0;
+    }
+
+    .box1_info_tip{
+        font-size: 16px;
+    }
+    
+    .box1_info_title{
+        font-size: 30px;
+    }
+    
+    .box1_info_description{
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:467px){
+    .sorting{
+        width: 100%;
+    }
+}

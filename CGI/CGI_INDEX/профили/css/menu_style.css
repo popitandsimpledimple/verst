@@ -1,0 +1,39 @@
+
+
+.button_status{
+    font-size: 20px;
+    font-style: normal;
+   color: #2a7d01;
+    width: 10%;
+}
+
+
+.tab_admin{
+    display: flex;
+    border-bottom: 4px solid #F7931E;
+    padding: 1%;
+}
+
+.tab_menu_admin{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.button_status_admin{
+    font-size: 20px;
+    font-style: normal;
+   color: #000000;
+    width: 10%;
+}
+
+@media screen and (max-width: 851px) {
+    .button_status{
+        font-size: 10px;
+    }
+
+    .button_status_admin{
+        font-size: 10px;
+     
+    }
+}

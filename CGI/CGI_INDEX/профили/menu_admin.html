@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> menu_client </title>
+    <meta charset="UTF-8">
+    <link href="css/Acc_style.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/menu_style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet"> 
+    
+</head>
+    
+<body>
+
+<div class="content"> 
+   
+    <div class="tab_admin">
+        <div class="tab_menu_admin"><button class="tablinks" onclick="openCity(event, 'Модерация')">МОДЕРАЦИЯ</button></div>
+        
+      </div>
+
+      <div id="Модерация" class="tabcontent">
+        <div class="exercise">
+            <div class="box2">
+                <div class="box2_content">
+                    <div class="box2_con">
+                        <a href=""><img src="css/content/ava.jpg"></a>
+                    </div>
+                    <div class="box2_info">
+                        <div class="box2_info_fio">
+                            <p>ФИО ИСПОЛНИТЕЛЯ</p>
+                        </div>
+                        <div class="box2_info_number"> 
+                            <p>НОМЕР ЗАДАЧИ</p>
+                        </div>
+                        <div class="box2_info_status_client"> 
+                            <a href="CGI.html" class="button_status_admin"> Удалить/Принять</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2_content">
+                    <div class="box2_con">
+                        <a href=""><img src="css/content/ava.jpg"></a>
+                    </div>
+                    <div class="box2_info">
+                        <div class="box2_info_fio">
+                            <p>ФИО ИСПОЛНИТЕЛЯ</p>
+                        </div>
+                        <div class="box2_info_number"> 
+                            <p>НОМЕР ЗАДАЧИ</p>
+                        </div>
+                        <div class="box2_info_status_client"> 
+                            <a href="CGI.html" class="button_status_admin"> Удалить/Принять</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+   
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    </script>
+
+</body>
+</html>
