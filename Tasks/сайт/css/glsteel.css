@@ -1,0 +1,56 @@
+.tekst{
+    position: absolute;
+    width: 43%;
+    height: 30%;
+    left: 9%;
+    top: 50%;
+    font-family: Neue Machina;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 46px;
+    color: #000000;
+    
+
+}
+
+.photo{
+    display: flex;
+    float: right;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    z-index: -1;
+
+    
+}
+
+.naz{
+    display: flex;
+    float: left;
+    margin: 5%;
+    top: 80px;
+position: absolute;
+    
+}
+
+@media screen and (min-width: 641px) {
+    .tekst{
+      font-size: 48px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .tekst{
+      font-size: 30px;
+      top: 33%;
+      width: 80%;
+      height: 15%;
+      text-align: center;
+    }
+    .photo{
+        top: 25%;
+        left: 0;
+        top: 50%;
+    }
+  }

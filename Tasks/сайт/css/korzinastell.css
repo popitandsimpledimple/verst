@@ -1,0 +1,181 @@
+.button_del {
+    position: absolute;
+	margin: 0;
+	font-size: 1em;
+	line-height: 20px;
+	height: 45px;
+	overflow: hidden;
+	text-align: center;
+	color: black;
+	font-family: Neue Machina;
+	width: 30%;
+	text-decoration: none;
+}
+
+.button_pay {
+    text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 20px 30px;
+	margin: 1% 0 0 3%;
+	border-radius: 10px;
+	font-family: 'Neue Machina', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #EF9E9E 0%, #F08130 51%, #EF9EAD 100%);
+}
+
+.naz{
+    text-align: center;
+}
+
+.naz img{
+    max-width: 100%;
+    padding: 2%;
+	margin-top: 45px;
+}
+
+.flex {
+    display: flex;
+}
+
+.product-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:767px){
+    .naz img{
+        
+        margin-top: 65px;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+        height: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+        height: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+        height: 25%;
+	}
+}
+
+.product {
+	display: block;
+	border-radius: 3px;
+	position: relative;
+	background: rgba(255, 255, 255, 0.473);
+	margin: 20px 20px;
+	text-decoration: none;
+	z-index: 0;
+	height: 380px;
+    width: 300px;
+}
+
+.product-photo {
+	position: relative;
+	padding-bottom: 100%;
+	overflow: auto;
+}
+
+.product-photo img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	transition: transform .4s ease-out;
+}
+
+.product p {
+	position: relative;
+	margin: 0;
+	font-size: 1em;
+	line-height: 20px;
+	height: 45px;
+	overflow: hidden;
+	text-align: center;
+	color: black;
+	font-family: Neue Machina;
+}
+
+.product-price{
+	position: relative;
+	margin: 0;
+	font-size: 1em;
+	line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+	text-align: center;
+	color: black;
+}
+
+#okno {
+    width: 50%;
+    height: 340px;
+    font-size: 18pt;
+    padding: 15px;
+    background-color: #b4b2a7;
+    color: #111;
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.reg-form{
+    display: flex;
+flex-direction: column;
+width: 300px;
+margin: 5% auto;
+position: initial;
+    
+}
+
+#form{
+    height: 40px;
+    width: 80%;
+    background: #E6E3D9
+    
+}
+
+#okno:target {display: block;}
+
+.create {
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    border: 1px solid #111;
+    color: #111;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: none;
+    font-size: 16pt;
+    cursor:pointer;
+}
+
+.create:hover {background: #e6e6ff;}

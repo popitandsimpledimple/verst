@@ -1,0 +1,27 @@
+.tekst{
+    margin: 80px;
+    text-align: center;
+    top: 0;
+position: absolute;
+}
+p{
+    margin: 20px;
+    font-family: Neue Machina;
+    font-size: 20px;
+}
+
+h1{
+    margin: 30px;
+}
+
+@media screen and (min-width: 601px) {
+    p {
+      font-size: 20px;
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    p {
+      font-size: 15px;
+    }
+  }

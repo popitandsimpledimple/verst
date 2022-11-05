@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ОБИХОД </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/korzinastell.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/headersteel.css" rel="stylesheet" type="text/css" />
+</head>
+    
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class='container_menu'>
+                <div class="header__body">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li>
+                                <a href="katalog.html" class="header__link">Каталог пластинок</a>
+                            </li>
+                            <li>
+                                <a href="acseshtml.html" class="header__link">Аксессуары</a>
+                            </li>
+                            <li>
+                                <a href="lkhtml.html" class="header__link">Личный кабинет</a>
+                            </li>
+                            <li>
+                                <a href="dost.html" class="header__link">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="otz.html" class="header__link">Отзывы</a>
+                            </li>
+                            <li>
+                                <a href="korzina.html" class="header__link">Корзина</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Подключаем jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="css/script.js"></script>
+
+    
+
+    <div class="naz">
+        <img src="css/content/Group 3.png" alt=""> <br>
+    </div>
+
+<div class="content flex" style="flex-direction: column"> 
+        
+
+    <h2 style="margin: 0 0 0 5%;">Ваши заказы:<a href="#okno" class="button_pay">ОПЛАТИТЬ</a></h2>
+
+    <ul class="products clearfix">
+        <li class="product-wrapper">
+            
+            <div class="product">
+                
+                <div class="product-photo">
+                    <img src="css/content/Taylor Swift - Red (Taylor's Version) album cover 1.png" alt="">
+                    
+            </div>
+               <p>
+                    TAYLOR SWIFT - RED(TAYLOR’S VERSION)
+               </p>
+                <p>
+                    3900p.
+                <a href="" class="button_del">удалить</a>
+                </p>
+
+            </div>
+            
+        </li>
+    </ul>
+
+    </div>
+
+    <div id="okno">
+        <form class="reg-form" action="korzina.html" method="get">
+            <div class="form-row">
+                <label for="form">ФИО: </label>
+                <input type="text" id="form" name="Name"/>
+           </div>
+           <div class="form-row">
+                <label for="form">E-mail: </label>
+                <input type="text" id="form" name="Mail"/>
+           </div>
+           <div class="form-row">
+                <label for="form">Адрес доставки: </label>
+                <input type="text" id="form" name="Address"/>
+           </div>
+           <a href="lkhtml.html" class="create">ОФОРМИТЬ</a>
+        </form>
+        
+    </div>
+   
+</body>
+</html>
